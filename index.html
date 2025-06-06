@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="style.css" />
+ 
+    
+
+</head>
+<body>
+
+  <div class="gift-box" onclick="revealBirthday()">
+      <img src="gift.png" alt="Gift" />
+  </div>
+
+<div class="cake" id="cake">
+  <img src="cake.png" alt="Cake" />
+</div>
+<div class="photo-name">
+  <img src="person.jpg" alt="Person" />
+  <h2>Happy Birthday, <span id="name">Sayma!</span></h2>
+</div>
+
+<div class="wish" id="wishText"></div>
+
+<div id="badge" style="
+  display: none;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #f39c12, #f1c40f);
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  animation: fadeIn 0.6s ease-in-out;
+">🎖️ Happy Birthday</div>
+
+<button id="rewishBtn" style="display:none;" onclick="showNewWish()">🎉 Rewish</button>
+<button id="cutBtn" style="display:none;" onclick="cutCake()">🍰 Cut the Cake</button>
+
+<audio id="bgm" loop autoplay>
+  <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="cutSound">
+  <source src="clap.mp3" type="audio/mpeg">
+</audio>
+ <script src="main.js"></script>
+</body>
+</html>
